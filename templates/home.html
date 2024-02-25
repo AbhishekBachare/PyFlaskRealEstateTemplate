@@ -1,5 +1,3 @@
-<!-- templates/home.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
-<body>
-    <h1>Welcome to our Real Estate Website</h1>
-    <p>Find your dream home with us!</p>
-    <a href="/estate">View Estate</a>
-    <br>
-    <a href="/contact">Contact Us</a>
+<body class="home-body">
+    <div class="container">
+        <h1>Welcome to our Real Estate Website</h1>
+        <p>Find your dream home with us!</p>
+        <a href="/estate" class="btn">View Estate</a>
+        <br>
+        <a href="/contact" class="btn">Contact Us</a>
+    </div>
 </body>
 </html>
